@@ -5,18 +5,18 @@
 
 
 ```php
-	require_once('path_to_SendMail.php');
-	$sendMail = new SendMail();
-	$config = array(
-		'subject'  => 'Test Mail',
-		'sender'   => 'John Perri Cruz',
-		'from'     => 'johnperricruz@gmail.com,
-		'bcc'      => 'other.user@domain.com,
-		'cc'       => 'other.user@domain.com,
-		'reply_to' => 'johnperricruz@gmail.com
-	);
-	$sendMail->setConfig($config);
-	$sendMail->sendEmail('EMAIL CONTENT',recepient@domain.com);
+require_once('path_to_SendMail.php');
+$sendMail = new SendMail();
+$config = array(
+	'subject'  => 'Test Mail',
+	'sender'   => 'John Perri Cruz',
+	'from'     => 'johnperricruz@gmail.com',
+	'bcc'      => 'other.user@domain.com',
+	'cc'       => 'other.user@domain.com',
+	'reply_to' => 'johnperricruz@gmail.com'
+);
+$sendMail->setConfig($config);
+$sendMail->sendEmail('EMAIL CONTENT',recepient@domain.com);
 ```
 
 ## Security Vulnerabilities
